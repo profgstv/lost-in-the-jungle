@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <title>Perdido na Floresta</title>
+    </head>
+    <body>
+        <header>
+            <h1>Perdido na Floresta</h1>
+        </header>
+        <main>
+            <div class="passo ativo" id="passo-0">
+                <img src="img/cenario-passo.png" alt="Mata com Cachoeira">
+                    <p>Andando pela floresta, encontrei uma cachoeira e uma clareira. <br>Devo seguir acima pelas águas ou ir pela clareira?</p>
+                    <button class="btn-proximo" data-proximo="1">Subir a cachoeira</button>
+                    <button class="btn-proximo" data-proximo="2">Ir pela clareira</button>
+            </div>
+            <div class="passo" id="passo-1">
+                <img src="img/cenario-passo.png" alt="Mata com Cachoeira">
+                    <p>Subindo pela cachoeira encontro uma clareira por onde passam raios de luz. <br>Sigo a clareira ou continuo pela mata?</p>
+                    <button class="btn-proximo" data-proximo="2">Seguir clareira</button>
+                    <button class="btn-proximo" data-proximo="0">Continuar o caminho da mata</button>
+            </div>
+            <div class="passo" id="passo-2">
+                <img src="img/cenario-passo.png" alt="Mata com Cachoeira">
+                    <p>Chegando à clareira, havia dois caminhos: Um leva à mata fechada e outro leva a uma cachoeira. <br>Devo seguir acima pelas águas ou seguir pela mata?</p>
+                    <button class="btn-proximo" data-proximo="0">Continuar no Mato</button>
+                    <button class="btn-proximo" data-proximo="1">Subir a cachoeira</button>
+            </div>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
